@@ -1,26 +1,53 @@
-## my_shell
+## fract'ol
 
-"my_shell" is a basic UNIX shell based on the school42's project 42sh.
-You can see the [subject](https://github.com/adandres/my_shell/blob/master/42sh.en.pdf) here.
+"fract'ol" is simple fractal explorer.
+You can see the [subject](https://github.com/adandres/fractol/blob/main/fract_ol.pdf) here.
+Before cloning the repository, you'll need to insall Minilibx
 
-## Installation
+## Installation of Minilibx on Mac OsX
 
-First you need to clone the project:
+First you need to Download [Xquartz](https://www.xquartz.org/)
+Then clone the Minilibx git repository
 ```bash
-git clone https://github.com/adandres/my_shell.git
+git clone https://github.com/42Paris/minilibx-linux.git Minilibx
 ```
-Once cloned and moved into the directory, type "make" to compile the program.
+Once cloned, run these commands.
 ```bash
- make
+ cd Minilibx && ./configure
+ sudo cp mlx.h /usr/X11/include
+ sudo cp libmlx.a /usr/X11/lib
 ```
-"my_shell" builds with gcc.
+
+## Installation of Minilibx on Linux
+
+Make sure you have the correct requirements
+```bash
+sudo apt-get install gcc make xorg libxext-dev libbsd-dev
+```
+Then clone the Minilibx git repository
+```bash
+git clone https://github.com/42Paris/minilibx-linux.git Minilibx
+```
+Once cloned, run these commands.
+```bash
+ cd Minilibx && ./configure
+ sudo cp mlx.h /usr/X11/include
+ sudo cp libmlx.a /usr/X11/lib
+```
+
+## Installation of fract'ol
+
+To clone and compile the project, run:
+```bash
+ git clone https://github.com/adandres/fractol.git fractol && cd fractol && make
+```
+fractol builds with gcc.
+
 ## Usage
 
 To launch the program type:
 ```bash
-./my_shell
+./fractol Mandel
 ```
-Once launched, you can use it like a normal shell.
-
-## Disclaimer
-I haven't finished it but it should be stable, still, there might be some leaks and crashs, feel free to report any issue.
+## Note
+25/20

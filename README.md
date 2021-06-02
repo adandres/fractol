@@ -32,5 +32,14 @@ Key|Action|
 <kbd>SPACE</kbd>|reset view
 <kbd>ESC</kbd>|Quit the program
 
+You can clic in the red circle to change the set colors
+ 
+ ![exemple](/images/exemple1.jpg)
+ 
+You can reset a color by clicking the reset button here
+ 
+ ![exemple](/images/exemple2.jpg)
+ 
+ 
 ## Note
 25/20

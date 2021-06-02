@@ -32,7 +32,7 @@ Key|Action|
 <kbd>SPACE</kbd>|reset view
 <kbd>ESC</kbd>|Quit the program
 
-You can clic in the red circle to change the set colors
+You can clic in the red circle to change the set colors or clic on a set to select it
  
  ![exemple](/images/exemple1.jpg)
  

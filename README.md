@@ -16,8 +16,9 @@ fractol builds with gcc.
 
 To launch the program type:
 ```bash
-./fractol Mandel
+./fractol Julia
 ```
+You can manipulate Julia set parameters with the mouse
 
 Key|Action|
 :-:|:-:

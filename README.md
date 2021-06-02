@@ -23,7 +23,7 @@ You can manipulate Julia set parameters with the mouse
 Key|Action|
 :-:|:-:
 <kbd>Left clic</kbd>|Zoom
-<kbd>^</kbd><kbd>v</kbd>|Increase/decrease Zoom
+<kbd>^</kbd><br><kbd>v</kbd>|Increase/decrease Zoom
 <kbd><</kbd><kbd>></kbd>|Increase/decrease maximum iterations
 <kbd>^</kbd><kbd>$</kbd>|Increase/decrease Speed of Julia set manipulation
 <kbd>j</kbd>|Pause Julia set manipulation

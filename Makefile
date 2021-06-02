@@ -1,21 +1,20 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    Makefile2                                          :+:      :+:    :+:    #
+#    Makefile                                        /       \.'`  `',.--//    #
 #                                                     +:+ +:+         +:+      #
 #    By: adandres <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/06/27 02:42:08 by adandres          #+#    #+#              #
-#    Updated: 2019/01/23 17:19:06 by adandres         ###   ########.fr        #
+#    Updated: 2021/06/02 14:21:42 by adandres                                  #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
 CFLAGS = -D_REENTRANT -Wall -Wextra -Werror
 NAME = fractol
-INCLUDES = -I /usr/local/include -I src/fat.h
-LIBS = libft/libft.a -L /usr/X11/lib/ -lmlx -lpthread -framework OpenGL \
-	   -framework AppKit
+INCLUDES = -I src/fat.h -I minilibx_macos/
+LIBS = libft/libft.a -lpthread -framework OpenGL -framework AppKit
 DEPS = src/fat.h
 SRC = src
 SRC_FILES = $(SRC)/basic_fract.c $(SRC)/deal_fract.c $(SRC)/deal_input.c \
@@ -29,8 +28,9 @@ OBJ_FILES = $(patsubst $(SRC)/%.c,$(OBJ_DIR)/%.o,$(SRC_FILES))
 all : $(OBJ_DIR) $(NAME)
 
 $(NAME) : $(OBJ_FILES)
-	$(MAKE) -C libft
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJ_FILES) $(LIBS)
+	@make -C libft
+	@make -C minilibx_macos
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ_FILES) $(LIBS) minilibx_macos/libmlx.a
 
 $(OBJ_DIR)/%.o: $(SRC)/%.c $(DEPS)
 	$(CC) $(CFLAGS) $(INCLUDES) -o $@ -c $<
@@ -39,12 +39,13 @@ $(OBJ_DIR) :
 	mkdir $(OBJ_DIR)
 
 clean :
-	$(MAKE) -C libft $@
+	@make -C libft clean
+	@make -C minilibx_macos clean
 	rm -rf $(OBJ_DIR)
 
 fclean : clean
-	$(MAKE) -C libft $@
+	@make -C libft fclean
+	@make -C minilibx_macos clean
 	rm -f $(NAME)
 
 re : fclean all
-	$(MAKE) -C libft $@

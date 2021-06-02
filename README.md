@@ -36,6 +36,10 @@ You can clic in the red circle to change the set colors
  
  ![exemple](/images/exemple1.jpg)
  
+You can select a color and change it's RGB by sliding the cursors
+ 
+ ![exemple](/images/exemple3.jpg)
+ 
 You can reset a color by clicking the reset button here
  
  ![exemple](/images/exemple2.jpg)

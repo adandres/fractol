@@ -18,5 +18,18 @@ To launch the program type:
 ```bash
 ./fractol Mandel
 ```
+
+Key|Action|
+:-:|:-:
+<kbd>Left clic</kbd>|Zomm
+<kbd>^</kbd><kbd>v</kbd>|Increase/decrease Zomm
+<kbd><</kbd><kbd>></kbd>|Increase/decrease maximum iterations
+<kbd>^</kbd><kbd>$</kbd>|Increase/decrease Speed of Julia set manipulation
+<kbd>j</kbd>|Pause Julia set manipulation
+<kbd>Enter</kbd>|Reset coloration
+<kbd>z</kbd><br><kbd>q</kbd><kbd>s</kbd><kbd>d</kbd>|Move
+<kbd>SPACE</kbd>|reset view
+<kbd>ESC</kbd>|Quit the program
+
 ## Note
 25/20

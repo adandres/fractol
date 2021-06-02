@@ -21,8 +21,8 @@ To launch the program type:
 
 Key|Action|
 :-:|:-:
-<kbd>Left clic</kbd>|Zomm
-<kbd>^</kbd><kbd>v</kbd>|Increase/decrease Zomm
+<kbd>Left clic</kbd>|Zoom
+<kbd>^</kbd><kbd>v</kbd>|Increase/decrease Zoom
 <kbd><</kbd><kbd>></kbd>|Increase/decrease maximum iterations
 <kbd>^</kbd><kbd>$</kbd>|Increase/decrease Speed of Julia set manipulation
 <kbd>j</kbd>|Pause Julia set manipulation

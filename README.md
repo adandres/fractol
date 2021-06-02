@@ -2,39 +2,7 @@
 
 "fract'ol" is simple fractal explorer.
 You can see the [subject](https://github.com/adandres/fractol/blob/main/fract_ol.pdf) here.
-Before cloning the repository, you'll need to insall Minilibx
-
-## Installation of Minilibx on Mac OsX
-
-First you need to Download [Xquartz](https://www.xquartz.org/)
-
-Then clone the Minilibx git repository
-```bash
-git clone https://github.com/42Paris/minilibx-linux.git Minilibx
-```
-Once cloned, run these commands.
-```bash
- cd Minilibx && ./configure
- sudo cp mlx.h /usr/X11/include
- sudo cp libmlx.a /usr/X11/lib
-```
-
-## Installation of Minilibx on Linux
-
-Make sure you have the correct requirements
-```bash
-sudo apt-get install gcc make xorg libxext-dev libbsd-dev
-```
-Then clone the Minilibx git repository
-```bash
-git clone https://github.com/42Paris/minilibx-linux.git Minilibx
-```
-Once cloned, run these commands.
-```bash
- cd Minilibx && ./configure
- sudo cp mlx.h /usr/X11/include
- sudo cp libmlx.a /usr/X11/lib
-```
+Works only on Mac OsX
 
 ## Installation of fract'ol
 
@@ -48,7 +16,21 @@ fractol builds with gcc.
 
 To launch the program type:
 ```bash
-./fractol Mandel
+./fractol Julia
 ```
+You can manipulate Julia set parameters with the mouse
+
+Key|Action|
+:-:|:-:
+<kbd>Left clic</kbd>|Zoom
+<kbd>^</kbd><br><kbd>v</kbd>|Increase/decrease Zoom
+<kbd><</kbd><kbd>></kbd>|Increase/decrease maximum iterations
+<kbd>^</kbd><kbd>$</kbd>|Increase/decrease Speed of Julia set manipulation
+<kbd>j</kbd>|Pause Julia set manipulation
+<kbd>Enter</kbd>|Reset coloration
+<kbd>z</kbd><br><kbd>q</kbd><kbd>s</kbd><kbd>d</kbd>|Move
+<kbd>SPACE</kbd>|reset view
+<kbd>ESC</kbd>|Quit the program
+
 ## Note
 25/20

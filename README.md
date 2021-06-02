@@ -7,6 +7,7 @@ Before cloning the repository, you'll need to insall Minilibx
 ## Installation of Minilibx on Mac OsX
 
 First you need to Download [Xquartz](https://www.xquartz.org/)
+
 Then clone the Minilibx git repository
 ```bash
 git clone https://github.com/42Paris/minilibx-linux.git Minilibx
